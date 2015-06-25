@@ -5,7 +5,7 @@ def bfs(graph, start):
     nodes.append(graph[start])
     visited = [start]
     while nodes:
-        current_node = nodes.pop()
+        current_node = nodes.popleft()
         for node in current_node:
             if not node in visited:
                 visited.append(node)
